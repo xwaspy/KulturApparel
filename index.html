@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kultur - Magazin online de îmbrăcăminte pentru bărbați și femei. Tricouri, hanorace, pantaloni jogger de calitate.">
+    <meta name="keywords" content="îmbrăcăminte, tricouri, hanorace, pantaloni, bărbați, femei, fashion">
+    <title>Kultur - Îmbrăcăminte de Calitate</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+</head>
+<body>
+    <div class="page-container page-transition" id="pageContainer">
+        <header class="header">
+            <div class="header-content">
+                <a href="#" id="logo" class="header-logo" >Kultur</a>
+                <nav class="header-nav">
+                    <ul class="nav-menu">
+                        <li><a href="#" class="nav-link" data-page="home" data-i18n="navHome">Acasă</a></li>
+                        <li><a href="#" class="nav-link" data-page="men" data-i18n="navMen">Bărbați</a></li>
+                        <li><a href="#" class="nav-link" data-page="women" data-i18n="navWomen">Femei</a></li>
+                        <li><a href="#" class="nav-link" data-page="contact" data-i18n="navContact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                <button id="ShoppingCart" class="nav-link" class="language-button" data-page= "ShoppingCart" style="font-size: 0.9rem;" data-i18n="ShoppingCart">Coș de Cumpărături</button>
+                <button id="langToggle" class="nav-link" style="font-size: 0.9rem;">EN</button>
+                </div>                
+            </div>
+        </header>
+
+        <main class="main-content" id="mainContent">
+            <div id="homePage" class="page-content">
+                <div style="text-align: center; padding: 2rem;">
+                    <h1 style="font-size: 3rem; color: white; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);" data-i18n="welcomeTitle">
+                        Bun venit la Kultur
+                    </h1>
+                    <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 2rem;" data-i18n="welcomeText">
+                        Descoperă colecția noastră de îmbrăcăminte de calitate
+                    </p>
+                </div>
+            </div>
+
+            <div id="menPage" class="page-content" style="display: none;">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Tricou Simplu</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Tricou Simplu</h3>
+                            <p class="product-price">59,99 RON</p>
+                            <button class="add-to-cart" onclick="addToCart(this)">
+                                <span data-i18n="addToCart">Adaugă în coș</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Hanorac Kultur</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Hanorac Kultur</h3>
+                            <p class="product-price">149,99 RON</p>
+                            <button class="add-to-cart" onclick="addToCart(this)">
+                                <span data-i18n="addToCart">Adaugă în coș</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Pantaloni Jogger</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pantaloni Jogger</h3>
+                            <p class="product-price">99,99 RON</p>
+                            <button class="add-to-cart" onclick="addToCart(this)">
+                                <span data-i18n="addToCart">Adaugă în coș</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Tricou Premium</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Tricou Premium</h3>
+                            <p class="product-price">79,99 RON</p>
+                            <button class="add-to-cart" onclick="addToCart(this)">
+                                <span data-i18n="addToCart">Adaugă în coș</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Jachetă Sport</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Jachetă Sport</h3>
+                            <p class="product-price">199,99 RON</p>
+                            <button class="add-to-cart" onclick="addToCart(this)">
+                                <span data-i18n="addToCart">Adaugă în coș</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Pantaloni Casual</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pantaloni Casual</h3>
+                            <p class="product-price">129,99 RON</p>
+                            <button class="add-to-cart" onclick="addToCart(this)">
+                                <span data-i18n="addToCart">Adaugă în coș</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="womenPage" class="page-content" style="display: none;">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Bluză Elegantă</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Bluză Elegantă</h3>
+                            <p class="product-price">89,99 RON</p>
+                            <button class="add-to-cart" onclick="addToCart(this)">
+                                <span data-i18n="addToCart">Adaugă în coș</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Rochie Casual</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Rochie Casual</h3>
+                            <p class="product-price">159,99 RON</p>
+                            <button class="add-to-cart" onclick="addToCart(this)">
+                                <span data-i18n="addToCart">Adaugă în coș</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Pantaloni Slim</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pantaloni Slim</h3>
+                            <p class="product-price">119,99 RON</p>
+                            <button class="add-to-cart" onclick="addToCart(this)">
+                                <span data-i18n="addToCart">Adaugă în coș</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Cardigan</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Cardigan</h3>
+                            <p class="product-price">139,99 RON</p>
+                            <button class="add-to-cart" onclick="addToCart(this)">
+                                <span data-i18n="addToCart">Adaugă în coș</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ShoppingCartPage" class="page-content" style="display: none;">
+  <div class="cart-container">
+    <h1 class="cart-title" data-i18n="cartTitle">Coș de cumpărături</h1>
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <h3 id="cartSubtotal" data-i18n="subtotal">${window.langManager.t('subtotal')}: ${this.getTotal()} RON</h3>
+      <button class="checkout-btn">
+        <span data-i18n="checkout">Finalizează comanda</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+            <div id="contactPage" class="page-content" style="display: none;">
+                <div class="contact-container">
+                    <h1 class="contact-title" data-i18n="contactTitle">Contactează-ne</h1>
+                    
+                    <div class="contact-info">
+                        <div><strong data-i18n="phone">Telefon:</strong> +40 712 345 678</div>
+                        <div><strong data-i18n="email">Email:</strong> contact@kultur.ro</div>
+                        <div><strong data-i18n="address">Adresă:</strong> <span data-i18n="addressText">Str. Exemplului nr. 10, București</span></div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label" data-i18n="nameLabel">Nume</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label" data-i18n="emailLabel">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label" data-i18n="messageLabel">Mesaj</label>
+                            <textarea id="message" name="message" class="form-textarea" required maxlength="500"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span data-i18n="submitBtn">Trimite mesajul</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-disclaimer" data-i18n="disclaimer">
+                    Produsele oferite pot varia ușor față de imagini. Consultă ghidul de mărimi pentru mai multe detalii.
+                </p>
+
+                <div class="footer-links">
+                    <a href="#" data-i18n="terms">Termeni și condiții</a>
+                    <span>|</span>
+                    <a href="#" data-i18n="privacy">Politica de confidențialitate</a>
+                </div>
+
+                <ul class="social-icons">
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener" title="Twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a></li>
+                </ul>
+
+                <div class="copyright" data-i18n="copyright">
+                    &copy; 2025 Kultur. Toate drepturile rezervate.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
