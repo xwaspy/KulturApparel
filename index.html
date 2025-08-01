@@ -19,7 +19,7 @@
 <body>
     <div class="page-container page-transition" id="pageContainer">
         <header class="header">
-            <div class="header-content">
+            <div class="header-content" class="header-logo">
                 <a href="#" id="logo" class="header-logo" >Kultur</a>
                 <nav class="header-nav">
                     <ul class="nav-menu">
@@ -32,6 +32,14 @@
                 <div class="header-buttons">
                 <button id="ShoppingCart" class="nav-link" class="language-button" data-page= "ShoppingCart" style="font-size: 0.9rem;" data-i18n="ShoppingCart">Coș de Cumpărături</button>
                 <button id="langToggle" class="nav-link" style="font-size: 0.9rem;">EN</button>
+                <div class="dropdown">
+  <button class="dropdown-toggle">Categorii</button>
+  <div class="dropdown-menu">
+    <a href="#">Tricouri</a>
+    <a href="#">Hanorace</a>
+    <a href="#">Pantaloni</a>
+  </div>
+</div>
                 </div>                
             </div>
         </header>
@@ -39,10 +47,10 @@
         <main class="main-content" id="mainContent">
             <div id="homePage" class="page-content">
                 <div style="text-align: center; padding: 2rem;">
-                    <h1 style="font-size: 3rem; color: white; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);" data-i18n="welcomeTitle">
+                    <h1 style="font-size: 3rem; color: #1a1a1a; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);" data-i18n="welcomeTitle">
                         Bun venit la Kultur
                     </h1>
-                    <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 2rem;" data-i18n="welcomeText">
+                    <p style="font-size: 1.2rem; color: #1a1a1a; margin-bottom: 2rem;" data-i18n="welcomeText">
                         Descoperă colecția noastră de îmbrăcăminte de calitate
                     </p>
                 </div>
@@ -51,8 +59,8 @@
             <div id="menPage" class="page-content" style="display: none;">
                 <div class="product-grid">
                     <div class="product-card">
-                        <div class="product-image">
-                            <span>Tricou Simplu</span>
+                        <div class="product-image"> 
+                            <img src="images/t-shirt.png" alt="Tricou Simplu" loading="lazy" />
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Tricou Simplu</h3>
@@ -64,8 +72,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <div class="product-image">
-                            <span>Hanorac Kultur</span>
+                        <div class="product-image"> 
+                                
+                            <img src="images/hanorac.png" alt="Tricou Simplu" loading="lazy" />
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Hanorac Kultur</h3>
@@ -77,8 +86,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <div class="product-image">
-                            <span>Pantaloni Jogger</span>
+                        <div class="product-image"> 
+                            
+                            <img src="images/jogger.png" alt="Pantaloni Jogger" loading="lazy" />
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Pantaloni Jogger</h3>
@@ -90,8 +100,9 @@
                     </div>
 
                     <div class="product-card">
-                        <div class="product-image">
-                            <span>Tricou Premium</span>
+                        <div class="product-image"> 
+                            
+                            <img src="images/polo.png" alt="Tricou Premium" loading="lazy" />
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Tricou Premium</h3>
@@ -103,8 +114,9 @@
                     </div>
 
                     <div class="product-card">
-                        <div class="product-image">
-                            <span>Jachetă Sport</span>
+                        <div class="product-image"> 
+                            
+                            <img src="images/sport-jacket.png" alt="Jachetă Sport" loading="lazy" />
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Jachetă Sport</h3>
@@ -116,8 +128,9 @@
                     </div>
 
                     <div class="product-card">
-                        <div class="product-image">
-                            <span>Pantaloni Casual</span>
+                        <div class="product-image"> 
+                            
+                            <img src="images/casual-pants.png" alt="Pantaloni Casual" loading="lazy" />
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Pantaloni Casual</h3>
@@ -133,8 +146,9 @@
             <div id="womenPage" class="page-content" style="display: none;">
                 <div class="product-grid">
                     <div class="product-card">
-                        <div class="product-image">
-                            <span>Bluză Elegantă</span>
+                        <div class="product-image"> 
+                            
+                            <img src="images/elegant-blouse.png" alt="Bluză Elegantă" loading="lazy" />
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Bluză Elegantă</h3>
@@ -146,8 +160,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <div class="product-image">
-                            <span>Rochie Casual</span>
+                        <div class="product-image"> 
+                            
+                            <img src="images/casual-dress.png" alt="Rochie Casual" loading="lazy" />
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Rochie Casual</h3>
@@ -159,8 +174,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <div class="product-image">
-                            <span>Pantaloni Slim</span>
+                        <div class="product-image"> 
+                            
+                            <img src="images/jeans.png" alt="Jeans Slim" loading="lazy" />
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Pantaloni Slim</h3>
@@ -172,8 +188,9 @@
                     </div>
 
                     <div class="product-card">
-                        <div class="product-image">
-                            <span>Cardigan</span>
+                        <div class="product-image"> 
+                            
+                            <img src="images/summer-dress.png" alt="Rochie de Vară" loading="lazy" />
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Cardigan</h3>

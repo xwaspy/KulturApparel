@@ -341,3 +341,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }, i * 100);
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const menu = button.nextElementSibling;
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    });
+  });
+});
